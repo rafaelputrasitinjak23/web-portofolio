@@ -71,16 +71,24 @@ nav .togglebtn span{
     transition-property:  transform, opacity;
 
 }
-nav .navlinks{
-    list-style-type: none;
+/* Burger - Save for later on video */
+.navlinks div {
+  width: 25px;
+  height: 2px;
+  background-color: #000;
+  margin: 7px;
+  transition: all 0.3s;
+  z-index: 99;
 }
-nav .navlinks li{
-    display: inline-block;
+
+.navlinks {
+  display: none;
+  z-index: 99;
+  position: fixed;
+  top: 33px;
+  right: 35px;
 }
-nav .navlinks li a{
-     color:#e5e5e5;
-     margin-right: 2.5rem;
-}
+
 .container {
     display: flex;
     justify-content: space-around;
